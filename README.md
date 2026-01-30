@@ -9,6 +9,7 @@ A curated collection of production-ready website templates for AI agents and dev
 | Template | Category | Tech Stack | Description |
 |----------|----------|------------|-------------|
 | [FlowForge](https://github.com/Little-Devs/template-flowforge) | Landing Page | Astro, CSS, JS | Technical luxury automation platform landing page |
+| [Glass Showcase](https://github.com/Little-Devs/template-glass-showcase) | Landing Page | Astro, CSS, JS | Horizontal-scrolling glassmorphism showcase with 18 sections |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 

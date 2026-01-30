@@ -1,3 +1,6 @@
 [submodule "templates/flowforge"]
 	path = templates/flowforge
 	url = https://github.com/Little-Devs/template-flowforge.git
+[submodule "templates/glass-showcase"]
+	path = templates/glass-showcase
+	url = https://github.com/Little-Devs/template-glass-showcase.git
