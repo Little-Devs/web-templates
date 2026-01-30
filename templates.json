@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-01-30",
+  "totalTemplates": 1,
+  "categories": [
+    "landing-page",
+    "dashboard",
+    "ecommerce",
+    "portfolio",
+    "blog",
+    "documentation"
+  ],
+  "templates": [
+    {
+      "id": "flowforge",
+      "name": "FlowForge",
+      "description": "Technical luxury automation platform landing page with sophisticated animations and refined aesthetics",
+      "category": "landing-page",
+      "subcategory": "saas",
+      "repository": "https://github.com/Little-Devs/template-flowforge",
+      "submodulePath": "templates/flowforge",
+      "techStack": {
+        "framework": "Astro",
+        "version": "5.17.1",
+        "styling": "CSS",
+        "scripting": "JavaScript",
+        "buildTool": "Vite"
+      },
+      "features": [
+        "Animated hero section with parallax effects",
+        "Feature grid with interactive cards",
+        "Syntax-highlighted code showcase window",
+        "Smooth scroll-triggered animations",
+        "Fully responsive design",
+        "Technical luxury aesthetic",
+        "Custom animations and micro-interactions",
+        "Professional navigation with glassmorphism",
+        "Social proof section",
+        "Call-to-action sections"
+      ],
+      "aesthetic": {
+        "style": "Technical Luxury",
+        "description": "Sophisticated blend of technical precision and refined elegance",
+        "fonts": {
+          "display": "Fraunces",
+          "sans": "Syne",
+          "mono": "JetBrains Mono"
+        },
+        "colors": {
+          "primary": "#0a1628",
+          "primaryName": "Navy",
+          "accent": "#d4a574",
+          "accentName": "Copper",
+          "background": "#faf9f7",
+          "backgroundName": "Off-white"
+        }
+      },
+      "sections": [
+        "Navigation",
+        "Hero with stats",
+        "Features grid",
+        "Platform showcase with code window",
+        "Social proof",
+        "CTA section",
+        "Footer"
+      ],
+      "useCases": [
+        "SaaS platforms",
+        "Automation tools",
+        "Developer tools",
+        "B2B services",
+        "Enterprise software",
+        "Workflow platforms"
+      ],
+      "customization": {
+        "difficulty": "easy",
+        "colorScheme": "CSS variables",
+        "typography": "Google Fonts",
+        "layout": "CSS Grid + Flexbox"
+      },
+      "performance": {
+        "framework": "Astro (SSG)",
+        "cssOnly": "Most animations",
+        "lighthouse": "90+"
+      },
+      "license": "MIT",
+      "author": "Little-Devs",
+      "createdAt": "2026-01-30",
+      "lastUpdated": "2026-01-30",
+      "tags": [
+        "landing-page",
+        "saas",
+        "automation",
+        "luxury",
+        "animated",
+        "responsive",
+        "astro"
+      ]
+    }
+  ]
+}
