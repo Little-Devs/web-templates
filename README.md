@@ -8,6 +8,7 @@ A curated collection of production-ready website templates for AI agents and dev
 
 | Template | Category | Tech Stack | Description |
 |----------|----------|------------|-------------|
+| [Flat Technology](https://github.com/Little-Devs/template-flat-technology) | Portfolio | Nuxt, Vue 3, Tailwind | Modern architecture studio showcase with GSAP animations |
 | [FlowForge](https://github.com/Little-Devs/template-flowforge) | Landing Page | Astro, CSS, JS | Technical luxury automation platform landing page |
 | [Glass Showcase](https://github.com/Little-Devs/template-glass-showcase) | Landing Page | Astro, CSS, JS | Horizontal-scrolling glassmorphism showcase with 18 sections |
 
@@ -79,16 +80,18 @@ web-templates/
 ├── CONTRIBUTING.md        # Guidelines for adding templates
 ├── .gitmodules           # Git submodules configuration
 └── templates/            # Template submodules
+    ├── flat-technology/  # Git submodule → template-flat-technology
     ├── flowforge/        # Git submodule → template-flowforge
+    ├── glass-showcase/   # Git submodule → template-glass-showcase
     └── ...               # More templates as submodules
 ```
 
 ## 🎯 Template Categories
 
 - **Landing Pages**: SaaS, product launches, marketing sites
+- **Portfolios**: Architecture studios, design agencies, creative showcases
 - **Dashboards**: Admin panels, analytics, data visualization
 - **E-commerce**: Product pages, shopping carts, checkouts
-- **Portfolios**: Personal sites, case studies, showcases
 - **Blogs**: Article layouts, content platforms
 - **Documentation**: API docs, guides, knowledge bases
 
@@ -188,9 +191,9 @@ See any template's `template.json` for a complete example.
 
 Templates use modern, popular technologies:
 
-- **Frameworks**: Astro, Next.js, React, Vue, Svelte
+- **Frameworks**: Astro, Nuxt, Next.js, React, Vue, Svelte
 - **Styling**: Tailwind CSS, CSS Modules, Styled Components
-- **Animation**: Framer Motion, GSAP, CSS animations
+- **Animation**: GSAP, Lenis, Framer Motion, CSS animations
 - **Build Tools**: Vite, Webpack, Turbopack
 
 ## 📝 License
