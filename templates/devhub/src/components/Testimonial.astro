@@ -1,0 +1,93 @@
+---
+interface Props {
+  quote: string;
+  author: string;
+  role: string;
+  company: string;
+}
+
+const {
+  quote = "It helps us onboard new software engineers and get them productive right away. We have all our source code, issues, and pull requests in one place... DevHub is a complete platform that frees us from menial tasks and enables us to do our best work.",
+  author = "Fabian Faulhaber",
+  role = "Application manager",
+  company = "Mercedes-Benz"
+} = Astro.props;
+---
+
+<section class="testimonial section" id="testimonial">
+  <div class="container">
+    <div class="testimonial-content">
+      <!-- Quote Mark -->
+      <div class="quote-mark" aria-hidden="true">"</div>
+      
+      <blockquote class="testimonial-quote">
+        <p>{quote}</p>
+      </blockquote>
+
+      <div class="testimonial-author">
+        <cite class="author-name">{author}</cite>
+        <span class="author-role">{role} at {company}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonial {
+    background-color: var(--color-canvas-default);
+    padding-block: var(--space-16);
+  }
+
+  .testimonial-content {
+    max-width: 900px;
+    margin-inline: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .quote-mark {
+    font-size: 8rem;
+    font-family: Georgia, serif;
+    color: var(--color-purple-fg);
+    opacity: 0.3;
+    line-height: 1;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .testimonial-quote {
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .testimonial-quote p {
+    font-size: clamp(var(--font-size-lg), 3vw, var(--font-size-2xl));
+    font-weight: var(--font-weight-normal);
+    font-style: italic;
+    color: var(--color-fg-default);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-8);
+  }
+
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .author-name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    color: var(--color-fg-default);
+  }
+
+  .author-role {
+    font-size: var(--font-size-sm);
+    color: var(--color-fg-muted);
+  }
+</style>

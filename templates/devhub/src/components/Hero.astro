@@ -1,0 +1,356 @@
+---
+interface Props {
+  headline?: string;
+  subheadline?: string;
+  primaryCta?: string;
+  secondaryCta?: string;
+}
+
+const {
+  headline = "The future of building happens together",
+  subheadline = "Tools and trends evolve, but collaboration endures. With DevHub, developers, agents, and code come together on one platform.",
+  primaryCta = "Sign up for DevHub",
+  secondaryCta = "Try AI Copilot free"
+} = Astro.props;
+---
+
+<section class="hero" id="hero">
+  <!-- Background Effects -->
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-glow"></div>
+    <div class="hero-particles">
+      {Array.from({ length: 20 }).map((_, i) => (
+        <span class="particle" style={`--delay: ${i * 0.5}s; --x: ${Math.random() * 100}%; --y: ${Math.random() * 100}%;`}></span>
+      ))}
+    </div>
+  </div>
+
+  <div class="container hero-container">
+    <div class="hero-content">
+      <!-- Headline -->
+      <h1 class="hero-headline headline-italic">
+        {headline}
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="hero-subheadline">
+        {subheadline}
+      </p>
+
+      <!-- Signup Form -->
+      <form class="hero-form" action="#" method="POST">
+        <div class="hero-form-group">
+          <label for="hero-email" class="sr-only">Email address</label>
+          <input 
+            type="email" 
+            id="hero-email" 
+            name="email" 
+            placeholder="Enter your email"
+            required
+            class="hero-input"
+          />
+          <button type="submit" class="btn btn-primary btn-lg hero-submit">
+            {primaryCta}
+          </button>
+        </div>
+      </form>
+
+      <!-- Secondary CTA -->
+      <a href="#copilot" class="hero-secondary-cta">
+        {secondaryCta}
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.751.751 0 01-1.042-.018.751.751 0 01-.018-1.042L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Mascot Illustration (Placeholder) -->
+    <div class="hero-illustration" aria-hidden="true">
+      <div class="mascot-group">
+        <div class="mascot mascot-1">
+          <svg viewBox="0 0 64 64" width="80" height="80" fill="none">
+            <circle cx="32" cy="32" r="28" fill="url(#mascot-gradient-1)" opacity="0.9"/>
+            <circle cx="24" cy="28" r="4" fill="#0D1117"/>
+            <circle cx="40" cy="28" r="4" fill="#0D1117"/>
+            <path d="M24 40c4 4 12 4 16 0" stroke="#0D1117" stroke-width="3" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="mascot-gradient-1" x1="0" y1="0" x2="64" y2="64">
+                <stop offset="0%" stop-color="#A371F7"/>
+                <stop offset="100%" stop-color="#6E40C9"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="mascot mascot-2">
+          <svg viewBox="0 0 48 48" width="60" height="60" fill="none">
+            <rect x="4" y="8" width="40" height="32" rx="4" fill="url(#mascot-gradient-2)"/>
+            <rect x="12" y="16" width="24" height="3" rx="1.5" fill="#0D1117" opacity="0.6"/>
+            <rect x="12" y="22" width="16" height="3" rx="1.5" fill="#0D1117" opacity="0.6"/>
+            <rect x="12" y="28" width="20" height="3" rx="1.5" fill="#3FB950"/>
+            <defs>
+              <linearGradient id="mascot-gradient-2" x1="0" y1="0" x2="48" y2="48">
+                <stop offset="0%" stop-color="#79C0FF"/>
+                <stop offset="100%" stop-color="#A371F7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="mascot mascot-3">
+          <svg viewBox="0 0 48 48" width="50" height="50" fill="none">
+            <circle cx="24" cy="24" r="20" fill="url(#mascot-gradient-3)"/>
+            <path d="M16 20l8 8 8-8" stroke="#0D1117" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="mascot-gradient-3" x1="0" y1="0" x2="48" y2="48">
+                <stop offset="0%" stop-color="#3FB950"/>
+                <stop offset="100%" stop-color="#1A7F37"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: var(--space-20);
+    overflow: hidden;
+  }
+
+  /* Background Effects */
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .hero-glow {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140%;
+    height: 80%;
+    background: radial-gradient(ellipse 60% 40% at 50% 40%, rgba(163, 113, 247, 0.15) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 30% at 30% 60%, rgba(121, 192, 255, 0.1) 0%, transparent 60%),
+                radial-gradient(ellipse 40% 30% at 70% 50%, rgba(63, 185, 80, 0.08) 0%, transparent 60%);
+  }
+
+  .hero-particles {
+    position: absolute;
+    inset: 0;
+  }
+
+  .particle {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 4px;
+    height: 4px;
+    background: var(--color-purple-fg);
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: float 4s ease-in-out infinite;
+    animation-delay: var(--delay);
+  }
+
+  .particle:nth-child(odd) {
+    background: var(--color-link);
+  }
+
+  .particle:nth-child(3n) {
+    background: var(--color-accent-fg);
+    width: 3px;
+    height: 3px;
+  }
+
+  /* Container */
+  .hero-container {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-container {
+      grid-template-columns: 1.2fr 1fr;
+      gap: var(--space-16);
+    }
+  }
+
+  /* Content */
+  .hero-content {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-content {
+      text-align: left;
+    }
+  }
+
+  .hero-headline {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: var(--font-weight-normal);
+    font-style: italic;
+    line-height: var(--line-height-tight);
+    color: var(--color-fg-default);
+    margin-bottom: var(--space-6);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .hero-subheadline {
+    font-size: clamp(var(--font-size-lg), 2.5vw, var(--font-size-xl));
+    color: var(--color-fg-muted);
+    max-width: 600px;
+    margin-bottom: var(--space-8);
+    animation: fadeInUp 0.8s ease 0.1s forwards;
+    opacity: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-subheadline {
+      margin-inline: 0;
+    }
+  }
+
+  /* Form */
+  .hero-form {
+    margin-bottom: var(--space-6);
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+  }
+
+  .hero-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-width: 500px;
+  }
+
+  @media (min-width: 640px) {
+    .hero-form-group {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-form-group {
+      margin-inline: 0;
+    }
+  }
+
+  .hero-input {
+    flex: 1;
+    padding: var(--space-4) var(--space-5);
+    font-size: var(--font-size-base);
+    background-color: rgba(22, 27, 34, 0.8);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-lg);
+  }
+
+  .hero-input:focus {
+    border-color: var(--color-accent-emphasis);
+    box-shadow: 0 0 0 3px rgba(46, 160, 67, 0.2);
+  }
+
+  .hero-submit {
+    white-space: nowrap;
+    padding-inline: var(--space-8);
+  }
+
+  /* Secondary CTA */
+  .hero-secondary-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-fg-default);
+    background-color: transparent;
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+    animation: fadeInUp 0.8s ease 0.3s forwards;
+    opacity: 0;
+  }
+
+  .hero-secondary-cta:hover {
+    background-color: var(--color-canvas-subtle);
+    border-color: var(--color-fg-muted);
+    color: var(--color-fg-default);
+  }
+
+  .hero-secondary-cta svg {
+    transition: transform var(--transition-fast);
+  }
+
+  .hero-secondary-cta:hover svg {
+    transform: translateX(4px);
+  }
+
+  /* Illustration */
+  .hero-illustration {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-illustration {
+      display: flex;
+    }
+  }
+
+  .mascot-group {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  .mascot {
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 10px 30px rgba(163, 113, 247, 0.3));
+  }
+
+  .mascot-1 {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+  }
+
+  .mascot-2 {
+    bottom: 20%;
+    left: 10%;
+    animation-delay: 0.5s;
+  }
+
+  .mascot-3 {
+    bottom: 30%;
+    right: 10%;
+    animation-delay: 1s;
+  }
+
+  /* Animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

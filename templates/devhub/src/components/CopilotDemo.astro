@@ -1,0 +1,375 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+  linkText?: string;
+  linkHref?: string;
+}
+
+const {
+  title = "Your AI partner everywhere.",
+  subtitle = "Copilot is ready to work with you at each step of the software development lifecycle.",
+  linkText = "Explore AI Copilot",
+  linkHref = "#copilot"
+} = Astro.props;
+---
+
+<section class="copilot-demo section" id="copilot">
+  <!-- Background Glow -->
+  <div class="copilot-bg" aria-hidden="true">
+    <div class="copilot-glow"></div>
+    <img 
+      src="https://github.githubassets.com/assets/particles-de1dd20f3008.png" 
+      alt="" 
+      class="particles-overlay"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="container">
+    <div class="copilot-content">
+      <!-- Text Side -->
+      <div class="copilot-text">
+        <h2 class="copilot-title">
+          {title}
+          <span class="copilot-subtitle">{subtitle}</span>
+        </h2>
+        <a href={linkHref} class="copilot-link">
+          {linkText}
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.751.751 0 01-1.042-.018.751.751 0 01-.018-1.042L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Demo Visual -->
+      <div class="copilot-visual">
+        <div class="chat-window">
+          <div class="chat-header">
+            <div class="chat-mode">
+              <span class="mode-label">Mode:</span>
+              <span class="mode-value">Agent</span>
+              <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true">
+                <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="chat-messages">
+            <div class="chat-message user">
+              <div class="message-avatar user-avatar">You</div>
+              <div class="message-content">
+                <p>Update the website to allow searching for products by name</p>
+              </div>
+            </div>
+            <div class="chat-message assistant">
+              <div class="message-avatar assistant-avatar">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </div>
+              <div class="message-content">
+                <p class="thinking">Analyzing codebase...</p>
+                <div class="code-changes">
+                  <div class="change-item">
+                    <span class="change-file">src/api/products.ts</span>
+                    <span class="change-badge">+24 -3</span>
+                  </div>
+                  <div class="change-item">
+                    <span class="change-file">src/components/SearchBar.tsx</span>
+                    <span class="change-badge">+42 -0</span>
+                  </div>
+                  <div class="change-item">
+                    <span class="change-file">src/pages/products.tsx</span>
+                    <span class="change-badge">+18 -5</span>
+                  </div>
+                </div>
+                <p class="completion">Changes applied successfully. Users can now search products by name with real-time filtering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer Story Card -->
+    <div class="customer-story">
+      <div class="story-logo">
+        <svg viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+          <text x="0" y="22" font-family="var(--font-family)" font-size="16" font-weight="600">Duolingo</text>
+        </svg>
+      </div>
+      <p class="story-text">Duolingo boosts developer speed by 25% with AI Copilot</p>
+      <a href="#customer-story" class="story-link">
+        Read customer story
+        <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true">
+          <path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.751.751 0 01-1.042-.018.751.751 0 01-.018-1.042L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .copilot-demo {
+    position: relative;
+    background-color: var(--color-canvas-default);
+  }
+
+  .copilot-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .copilot-glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 60%;
+    background: radial-gradient(ellipse 50% 50% at 50% 0%, rgba(163, 113, 247, 0.12) 0%, transparent 70%);
+  }
+
+  .particles-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+  }
+
+  .copilot-content {
+    position: relative;
+    display: grid;
+    gap: var(--space-12);
+    align-items: center;
+    margin-bottom: var(--space-16);
+  }
+
+  @media (min-width: 1024px) {
+    .copilot-content {
+      grid-template-columns: 1fr 1.2fr;
+      gap: var(--space-16);
+    }
+  }
+
+  /* Text */
+  .copilot-text {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .copilot-text {
+      text-align: left;
+    }
+  }
+
+  .copilot-title {
+    font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-snug);
+    margin-bottom: var(--space-6);
+  }
+
+  .copilot-subtitle {
+    display: block;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-fg-muted);
+    margin-top: var(--space-2);
+  }
+
+  .copilot-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-link);
+  }
+
+  .copilot-link:hover {
+    color: var(--color-link-hover);
+  }
+
+  .copilot-link svg {
+    transition: transform var(--transition-fast);
+  }
+
+  .copilot-link:hover svg {
+    transform: translateX(4px);
+  }
+
+  /* Chat Window */
+  .chat-window {
+    background-color: var(--color-canvas-subtle);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl), var(--shadow-glow-purple);
+  }
+
+  .chat-header {
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--color-canvas-inset);
+    border-bottom: 1px solid var(--color-border-default);
+  }
+
+  .chat-mode {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-1) var(--space-3);
+    background-color: var(--color-canvas-subtle);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+  }
+
+  .mode-label {
+    color: var(--color-fg-muted);
+  }
+
+  .mode-value {
+    color: var(--color-purple-fg);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .chat-messages {
+    padding: var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .chat-message {
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .message-avatar {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .user-avatar {
+    background-color: var(--color-accent-emphasis);
+    color: var(--color-fg-on-emphasis);
+  }
+
+  .assistant-avatar {
+    background: var(--gradient-purple);
+    color: var(--color-fg-on-emphasis);
+  }
+
+  .message-content {
+    flex: 1;
+    font-size: var(--font-size-sm);
+    color: var(--color-fg-default);
+  }
+
+  .message-content p {
+    color: var(--color-fg-default);
+    margin-bottom: var(--space-3);
+  }
+
+  .thinking {
+    color: var(--color-fg-muted);
+    font-style: italic;
+  }
+
+  .code-changes {
+    background-color: var(--color-canvas-inset);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-md);
+    padding: var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+
+  .change-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-border-muted);
+  }
+
+  .change-item:last-child {
+    border-bottom: none;
+  }
+
+  .change-file {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+    color: var(--color-link);
+  }
+
+  .change-badge {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-xs);
+    color: var(--color-accent-fg);
+    background-color: var(--color-accent-subtle);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+  }
+
+  .completion {
+    color: var(--color-accent-fg) !important;
+  }
+
+  /* Customer Story */
+  .customer-story {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-8);
+    background-color: var(--color-canvas-subtle);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-xl);
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .customer-story {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+
+  .story-logo {
+    flex-shrink: 0;
+    color: var(--color-fg-muted);
+  }
+
+  .story-text {
+    flex: 1;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-fg-default);
+  }
+
+  .story-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-link);
+    white-space: nowrap;
+  }
+
+  .story-link:hover {
+    color: var(--color-link-hover);
+  }
+</style>

@@ -1,0 +1,112 @@
+{
+  "id": "devhub",
+  "name": "DevHub",
+  "version": "1.0.0",
+  "description": "GitHub-inspired developer platform template with dark theme, animated hero, feature tabs, and modern UI components",
+  "category": "landing-page",
+  "subcategory": "developer-tools",
+  "techStack": {
+    "framework": "Astro",
+    "version": "5.1.0",
+    "styling": "CSS",
+    "scripting": "TypeScript/JavaScript"
+  },
+  "features": [
+    "Dark theme with GitHub-inspired color palette",
+    "Responsive navigation with hamburger menu",
+    "Animated hero section with particle effects",
+    "Interactive feature tabs with code demos",
+    "Infinite scrolling customer logo carousel",
+    "AI Copilot demo section with chat interface",
+    "Security stats and feature cards",
+    "Testimonial section with quote styling",
+    "Final CTA section with mascot illustrations",
+    "Multi-column footer with social links",
+    "Back to top button",
+    "Scroll-triggered animations",
+    "Keyboard accessible",
+    "Reduced motion support"
+  ],
+  "aesthetic": {
+    "style": "GitHub Dark",
+    "description": "Modern developer platform aesthetic with dark canvas, purple/green accents, and professional typography",
+    "fonts": {
+      "primary": "Inter",
+      "mono": "JetBrains Mono"
+    },
+    "colors": {
+      "background": "#0D1117",
+      "backgroundName": "Canvas Default",
+      "primary": "#1A7F37",
+      "primaryName": "Green CTA",
+      "accent": "#A371F7",
+      "accentName": "Purple",
+      "link": "#79C0FF",
+      "linkName": "Light Blue"
+    }
+  },
+  "sections": [
+    "Header with navigation dropdowns",
+    "Hero with email signup",
+    "Feature tabs (Code/Plan/Collaborate/Automate/Secure)",
+    "Customer logos carousel",
+    "AI Copilot demo",
+    "Security section with stats",
+    "Testimonial quote",
+    "Final CTA",
+    "Multi-column footer"
+  ],
+  "useCases": [
+    "Developer platforms",
+    "SaaS products",
+    "DevOps tools",
+    "Code editors",
+    "API platforms",
+    "Open source projects",
+    "Tech startups",
+    "Enterprise software"
+  ],
+  "customization": {
+    "difficulty": "easy",
+    "colorScheme": "CSS variables in variables.css",
+    "typography": "Google Fonts (Inter, JetBrains Mono)",
+    "layout": "CSS Grid + Flexbox",
+    "components": "Modular Astro components"
+  },
+  "performance": {
+    "framework": "Astro (SSG)",
+    "cssOnly": "Most animations",
+    "lighthouse": "95+",
+    "optimizations": [
+      "Zero JavaScript by default",
+      "Font preloading",
+      "CSS animations",
+      "Lazy loading images"
+    ]
+  },
+  "accessibility": {
+    "wcag": "AA",
+    "features": [
+      "Skip to content link",
+      "ARIA labels",
+      "Focus indicators",
+      "Keyboard navigation",
+      "Reduced motion support",
+      "Color contrast 4.5:1+"
+    ]
+  },
+  "deployment": {
+    "platforms": [
+      "Cloudflare Pages",
+      "Vercel",
+      "Netlify",
+      "GitHub Pages",
+      "Any static host"
+    ],
+    "basePath": "Configurable in astro.config.mjs"
+  },
+  "author": "Little-Devs",
+  "license": "MIT",
+  "createdAt": "2026-01-31",
+  "lastUpdated": "2026-01-31"
+}

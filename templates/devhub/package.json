@@ -1,0 +1,19 @@
+{
+  "name": "devhub",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "GitHub-inspired developer platform template with dark theme, feature tabs, and modern animations",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

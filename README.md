@@ -167,6 +167,18 @@ Templates must meet these standards:
 - **Metadata**: Complete `template.json` file
 - **License**: MIT or compatible
 
+## 📖 Rules & Standards
+
+We maintain comprehensive documentation to ensure consistent, high-quality templates:
+
+- **[Design Rules](docs/DESIGN_RULES.md)** - Create distinctive, memorable designs that avoid generic AI aesthetics. Covers typography, color, motion, composition, and responsive design.
+
+- **[Build Rules](docs/BUILD_RULES.md)** - Technical standards for code quality, performance, accessibility, and testing. Includes TypeScript best practices and optimization guidelines.
+
+- **[Deployment Rules](docs/DEPLOYMENT_RULES.md)** - Host-agnostic deployment best practices. Covers relative paths, environment variables, and platform-specific configurations for Cloudflare, Vercel, Netlify, and more.
+
+**For AI Agents:** This repository includes a `.cursorrules` file that Cursor automatically loads with comprehensive rules for template development.
+
 ## 📊 Template Metadata
 
 Each template includes a `template.json` file with:

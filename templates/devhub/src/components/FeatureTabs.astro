@@ -1,0 +1,444 @@
+---
+interface Feature {
+  id: string;
+  label: string;
+  title: string;
+  description: string;
+  link: string;
+  linkText: string;
+  icon: string;
+}
+
+function getCodeSnippet(id: string): string {
+  const snippets: Record<string, string> = {
+    code: `// AI-powered code completion
+async function generateComponent(prompt) {
+  const response = await ai.complete({
+    model: "copilot-4",
+    prompt: prompt,
+    maxTokens: 500
+  });
+  
+  return response.code;
+}`,
+    plan: `// Project task management
+const sprint = await project.createSprint({
+  name: "v2.0 Release",
+  duration: "2 weeks",
+  tasks: [
+    { title: "API redesign", priority: "high" },
+    { title: "UI components", priority: "medium" }
+  ]
+});`,
+    collaborate: `// Code review automation
+await pullRequest.review({
+  assignees: ["@team-lead"],
+  checks: ["lint", "test", "security"],
+  autoMerge: true,
+  requiredApprovals: 2
+});`,
+    automate: `// CI/CD pipeline configuration
+workflow:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm test
+      - run: npm run deploy`,
+    secure: `// Automated security scanning
+const scan = await security.analyze({
+  dependencies: true,
+  secrets: true,
+  vulnerabilities: true,
+  autofix: true // AI-powered fixes
+});`
+  };
+  return snippets[id] || '';
+}
+
+const features: Feature[] = [
+  {
+    id: 'code',
+    label: 'Code',
+    title: 'Write better code, faster',
+    description: 'Write, test, and fix code quickly with AI assistance, from simple boilerplate to complex features.',
+    link: '#code',
+    linkText: 'Explore AI Coding',
+    icon: 'code'
+  },
+  {
+    id: 'plan',
+    label: 'Plan',
+    title: 'Organize with clarity',
+    description: 'Organize everything from high-level roadmaps to everyday tasks with integrated project management.',
+    link: '#plan',
+    linkText: 'Explore Projects',
+    icon: 'project'
+  },
+  {
+    id: 'collaborate',
+    label: 'Collaborate',
+    title: 'Work together seamlessly',
+    description: 'Keep track of your tasks with tools that adapt to your code. Review, discuss, and merge with confidence.',
+    link: '#collaborate',
+    linkText: 'Explore Collaboration',
+    icon: 'people'
+  },
+  {
+    id: 'automate',
+    label: 'Automate',
+    title: 'Ship faster, worry less',
+    description: 'Ship faster with secure, reliable CI/CD. Automate your path from code to production.',
+    link: '#automate',
+    linkText: 'Explore Actions',
+    icon: 'workflow'
+  },
+  {
+    id: 'secure',
+    label: 'Secure',
+    title: 'Security built-in',
+    description: 'Spend less time debugging and more time building features with AI-powered security fixes.',
+    link: '#secure',
+    linkText: 'Explore Security',
+    icon: 'shield'
+  }
+];
+---
+
+<section class="feature-tabs section" id="features">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="feature-tabs-header">
+      <h2 class="feature-tabs-title">DevHub features</h2>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="tabs-nav" role="tablist" aria-label="Feature categories">
+      {features.map((feature, index) => (
+        <button
+          role="tab"
+          id={`tab-${feature.id}`}
+          aria-controls={`panel-${feature.id}`}
+          aria-selected={index === 0 ? 'true' : 'false'}
+          class={`tab-button ${index === 0 ? 'active' : ''}`}
+          data-tab={feature.id}
+        >
+          {feature.label}
+        </button>
+      ))}
+    </div>
+
+    <!-- Tab Panels -->
+    <div class="tab-panels">
+      {features.map((feature, index) => (
+        <div
+          role="tabpanel"
+          id={`panel-${feature.id}`}
+          aria-labelledby={`tab-${feature.id}`}
+          class={`tab-panel ${index === 0 ? 'active' : ''}`}
+          data-panel={feature.id}
+        >
+          <div class="tab-panel-content">
+            <div class="tab-panel-text">
+              <span class="tab-label">{feature.label}</span>
+              <h3 class="tab-title">{feature.title}</h3>
+              <p class="tab-description">{feature.description}</p>
+              <a href={feature.link} class="tab-link">
+                {feature.linkText}
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.751.751 0 01-1.042-.018.751.751 0 01-.018-1.042L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="tab-panel-visual">
+              <!-- Code Demo Window -->
+              <div class="demo-window">
+                <div class="demo-window-header">
+                  <div class="demo-window-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span class="demo-window-title">{feature.id}.tsx</span>
+                </div>
+                <div class="demo-window-content">
+                  <pre class="demo-code"><code>{getCodeSnippet(feature.id)}</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-button');
+  const panels = document.querySelectorAll('.tab-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.getAttribute('data-tab');
+      
+      // Update tabs
+      tabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      
+      // Update panels
+      panels.forEach(panel => {
+        panel.classList.remove('active');
+        if (panel.getAttribute('data-panel') === targetId) {
+          panel.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .feature-tabs {
+    background-color: var(--color-canvas-default);
+  }
+
+  .feature-tabs-header {
+    text-align: center;
+    margin-bottom: var(--space-10);
+  }
+
+  .feature-tabs-title {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* Tabs Navigation */
+  .tabs-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-1);
+    margin-bottom: var(--space-12);
+    padding: var(--space-1);
+    background-color: var(--color-canvas-subtle);
+    border-radius: var(--radius-lg);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab-button {
+    padding: var(--space-3) var(--space-5);
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-fg-muted);
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+  }
+
+  .tab-button:hover {
+    color: var(--color-fg-default);
+  }
+
+  .tab-button.active {
+    color: var(--color-fg-default);
+    background-color: var(--color-canvas-default);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Tab Panels */
+  .tab-panels {
+    position: relative;
+  }
+
+  .tab-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .tab-panel.active {
+    display: block;
+  }
+
+  .tab-panel-content {
+    display: grid;
+    gap: var(--space-12);
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    .tab-panel-content {
+      grid-template-columns: 1fr 1.5fr;
+      gap: var(--space-16);
+    }
+  }
+
+  /* Text Content */
+  .tab-panel-text {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .tab-panel-text {
+      text-align: left;
+    }
+  }
+
+  .tab-label {
+    display: inline-block;
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-purple-fg);
+    background-color: var(--color-purple-subtle);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-4);
+  }
+
+  .tab-title {
+    font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-4xl));
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-4);
+  }
+
+  .tab-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-fg-muted);
+    margin-bottom: var(--space-6);
+    max-width: 500px;
+  }
+
+  @media (min-width: 1024px) {
+    .tab-description {
+      margin-inline: 0;
+    }
+  }
+
+  .tab-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-link);
+  }
+
+  .tab-link:hover {
+    color: var(--color-link-hover);
+  }
+
+  .tab-link svg {
+    transition: transform var(--transition-fast);
+  }
+
+  .tab-link:hover svg {
+    transform: translateX(4px);
+  }
+
+  /* Demo Window */
+  .demo-window {
+    background-color: var(--color-canvas-subtle);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+  }
+
+  .demo-window-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    background-color: var(--color-canvas-inset);
+    border-bottom: 1px solid var(--color-border-default);
+  }
+
+  .demo-window-dots {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .demo-window-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-border-default);
+  }
+
+  .demo-window-dots span:nth-child(1) {
+    background-color: #ff5f56;
+  }
+
+  .demo-window-dots span:nth-child(2) {
+    background-color: #ffbd2e;
+  }
+
+  .demo-window-dots span:nth-child(3) {
+    background-color: #27c93f;
+  }
+
+  .demo-window-title {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+    color: var(--color-fg-muted);
+  }
+
+  .demo-window-content {
+    padding: var(--space-6);
+    overflow-x: auto;
+  }
+
+  .demo-code {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    color: var(--color-fg-default);
+    margin: 0;
+  }
+
+  .demo-code code {
+    display: block;
+  }
+
+  /* Syntax highlighting classes */
+  :global(.demo-code .keyword) {
+    color: #ff7b72;
+  }
+
+  :global(.demo-code .function) {
+    color: #d2a8ff;
+  }
+
+  :global(.demo-code .string) {
+    color: #a5d6ff;
+  }
+
+  :global(.demo-code .comment) {
+    color: #8b949e;
+  }
+
+  :global(.demo-code .number) {
+    color: #79c0ff;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
