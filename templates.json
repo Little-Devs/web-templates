@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "lastUpdated": "2026-01-31",
-  "totalTemplates": 3,
+  "totalTemplates": 4,
   "categories": [
     "landing-page",
     "dashboard",
@@ -276,6 +276,99 @@
         "smooth-scroll",
         "pwa",
         "responsive"
+      ]
+    },
+    {
+      "id": "devhub",
+      "name": "DevHub",
+      "description": "GitHub-inspired developer platform template with dark theme, feature tabs, and modern animations",
+      "category": "landing-page",
+      "subcategory": "developer-tools",
+      "repository": "https://github.com/Little-Devs/template-devhub",
+      "submodulePath": "templates/devhub",
+      "techStack": {
+        "framework": "Astro",
+        "version": "5.1.0",
+        "styling": "CSS",
+        "scripting": "TypeScript",
+        "buildTool": "Vite"
+      },
+      "features": [
+        "Dark theme with GitHub-inspired color palette",
+        "Responsive navigation with hamburger menu",
+        "Animated hero section with particle effects",
+        "Interactive feature tabs with code demos",
+        "Infinite scrolling customer logo carousel",
+        "AI Copilot demo section with chat interface",
+        "Security stats and feature cards",
+        "Testimonial section with quote styling",
+        "Final CTA section with mascot illustrations",
+        "Multi-column footer with social links",
+        "Scroll-triggered animations",
+        "Keyboard accessible",
+        "Reduced motion support"
+      ],
+      "aesthetic": {
+        "style": "GitHub Dark",
+        "description": "Modern developer platform aesthetic with dark canvas, purple/green accents, and professional typography",
+        "fonts": {
+          "primary": "Inter",
+          "mono": "JetBrains Mono"
+        },
+        "colors": {
+          "primary": "#0D1117",
+          "primaryName": "Canvas Default",
+          "accent": "#1A7F37",
+          "accentName": "Green CTA",
+          "background": "#0D1117",
+          "backgroundName": "Dark"
+        }
+      },
+      "sections": [
+        "Header with navigation dropdowns",
+        "Hero with email signup",
+        "Feature tabs (Code/Plan/Collaborate/Automate/Secure)",
+        "Customer logos carousel",
+        "AI Copilot demo",
+        "Security section with stats",
+        "Testimonial quote",
+        "Final CTA",
+        "Multi-column footer"
+      ],
+      "useCases": [
+        "Developer platforms",
+        "SaaS products",
+        "DevOps tools",
+        "Code editors",
+        "API platforms",
+        "Open source projects",
+        "Tech startups",
+        "Enterprise software"
+      ],
+      "customization": {
+        "difficulty": "easy",
+        "colorScheme": "CSS variables in variables.css",
+        "typography": "Google Fonts (Inter, JetBrains Mono)",
+        "layout": "CSS Grid + Flexbox"
+      },
+      "performance": {
+        "framework": "Astro (SSG)",
+        "cssOnly": "Most animations",
+        "lighthouse": "95+"
+      },
+      "license": "MIT",
+      "author": "Little-Devs",
+      "createdAt": "2026-01-31",
+      "lastUpdated": "2026-01-31",
+      "tags": [
+        "landing-page",
+        "developer-tools",
+        "dark-theme",
+        "github-inspired",
+        "animated",
+        "responsive",
+        "astro",
+        "typescript"
       ]
     }
   ]

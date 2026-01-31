@@ -4,11 +4,7 @@ Thank you for your interest in contributing to our template collection! This gui
 
 ## 🎯 Template Requirements
 
-All templates must meet these standards before being accepted. For detailed guidelines, refer to our comprehensive rule documentation:
-
-- **[Design Rules](docs/DESIGN_RULES.md)** - Design philosophy, typography, color, and aesthetics
-- **[Build Rules](docs/BUILD_RULES.md)** - Technical standards, code quality, and performance
-- **[Deployment Rules](docs/DEPLOYMENT_RULES.md)** - Host-agnostic deployment and portability
+All templates must meet these standards before being accepted:
 
 ### Code Quality
 
@@ -18,37 +14,23 @@ All templates must meet these standards before being accepted. For detailed guid
 - ✅ No console logs or debug code
 - ✅ Proper error handling
 - ✅ Security best practices
-- ✅ TypeScript for all new templates
-- ✅ Follow patterns in [Build Rules](docs/BUILD_RULES.md)
 
 ### Design & UX
 
-- ✅ Distinctive, memorable design (avoid generic AI aesthetics)
-- ✅ Unique typography (not Inter, Roboto, or Arial)
-- ✅ Cohesive color palette (not purple gradients)
 - ✅ Responsive design (mobile, tablet, desktop)
+- ✅ Modern, professional aesthetic
+- ✅ Consistent spacing and typography
 - ✅ Smooth animations and transitions
 - ✅ Accessible UI (WCAG AA compliance)
 - ✅ Cross-browser compatibility
-- ✅ Follow principles in [Design Rules](docs/DESIGN_RULES.md)
-
-### Deployment & Portability
-
-- ✅ Host-agnostic (works on Cloudflare, Vercel, Netlify, etc.)
-- ✅ Relative paths only (no absolute URLs)
-- ✅ Subdirectory deployment support
-- ✅ Environment variables properly configured
-- ✅ Deployment instructions for multiple platforms
-- ✅ Follow guidelines in [Deployment Rules](docs/DEPLOYMENT_RULES.md)
 
 ### Performance
 
 - ✅ Optimized images and assets
 - ✅ Efficient CSS and JavaScript
 - ✅ Fast page load times
-- ✅ Lighthouse score 90+ (target 95+)
+- ✅ Lighthouse score 90+ recommended
 - ✅ No unnecessary dependencies
-- ✅ Code splitting where appropriate
 
 ### Documentation
 
@@ -56,9 +38,8 @@ All templates must meet these standards before being accepted. For detailed guid
 - ✅ Setup and installation instructions
 - ✅ Customization guide
 - ✅ Project structure explanation
-- ✅ Deployment instructions for multiple platforms
 - ✅ Usage examples
-- ✅ Complete template.json metadata file
+- ✅ Template metadata file
 
 ## 📝 Adding a New Template
 
@@ -244,36 +225,6 @@ Have ideas for improving templates?
 2. Provide examples or mockups if possible
 3. Explain the benefit to users
 4. If approved, submit a PR with implementation
-
-## 📚 Rule Documentation
-
-Before creating a template, read our comprehensive guides:
-
-### [Design Rules](docs/DESIGN_RULES.md)
-- Design thinking process
-- Avoiding generic AI aesthetics
-- Typography excellence
-- Color and theme guidance
-- Motion and animation principles
-- Spatial composition techniques
-- Responsive design considerations
-
-### [Build Rules](docs/BUILD_RULES.md)
-- Tech stack standards
-- TypeScript best practices
-- Code quality requirements
-- Performance optimization
-- Accessibility standards
-- Testing requirements
-- Documentation guidelines
-
-### [Deployment Rules](docs/DEPLOYMENT_RULES.md)
-- Host-agnostic architecture
-- Relative path requirements
-- Environment variable patterns
-- Base path configuration
-- Platform-specific guides (Cloudflare, Vercel, Netlify, GitHub Pages)
-- Security considerations
 
 ## 🎓 Resources
 

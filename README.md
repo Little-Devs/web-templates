@@ -8,6 +8,7 @@ A curated collection of production-ready website templates for AI agents and dev
 
 | Template | Category | Tech Stack | Description |
 |----------|----------|------------|-------------|
+| [DevHub](https://github.com/Little-Devs/template-devhub) | Landing Page | Astro, CSS, TS | GitHub-inspired developer platform with dark theme and animations |
 | [Flat Technology](https://github.com/Little-Devs/template-flat-technology) | Portfolio | Nuxt, Vue 3, Tailwind | Modern architecture studio showcase with GSAP animations |
 | [FlowForge](https://github.com/Little-Devs/template-flowforge) | Landing Page | Astro, CSS, JS | Technical luxury automation platform landing page |
 | [Glass Showcase](https://github.com/Little-Devs/template-glass-showcase) | Landing Page | Astro, CSS, JS | Horizontal-scrolling glassmorphism showcase with 18 sections |
@@ -166,18 +167,6 @@ Templates must meet these standards:
 - **Documentation**: Comprehensive README and inline comments
 - **Metadata**: Complete `template.json` file
 - **License**: MIT or compatible
-
-## 📖 Rules & Standards
-
-We maintain comprehensive documentation to ensure consistent, high-quality templates:
-
-- **[Design Rules](docs/DESIGN_RULES.md)** - Create distinctive, memorable designs that avoid generic AI aesthetics. Covers typography, color, motion, composition, and responsive design.
-
-- **[Build Rules](docs/BUILD_RULES.md)** - Technical standards for code quality, performance, accessibility, and testing. Includes TypeScript best practices and optimization guidelines.
-
-- **[Deployment Rules](docs/DEPLOYMENT_RULES.md)** - Host-agnostic deployment best practices. Covers relative paths, environment variables, and platform-specific configurations for Cloudflare, Vercel, Netlify, and more.
-
-**For AI Agents:** This repository includes a `.cursorrules` file that Cursor automatically loads with comprehensive rules for template development.
 
 ## 📊 Template Metadata
 
