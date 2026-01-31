@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "lastUpdated": "2026-01-31",
-  "totalTemplates": 4,
+  "totalTemplates": 5,
   "categories": [
     "landing-page",
     "dashboard",
@@ -369,6 +369,93 @@
         "responsive",
         "astro",
         "typescript"
+      ]
+    },
+    {
+      "id": "therme-kanzian",
+      "name": "Therme Kanzian",
+      "description": "Minimal wellness spa landing page with video background hero, inspired by landscape-integrated architecture and nature",
+      "category": "landing-page",
+      "subcategory": "wellness",
+      "repository": "https://github.com/Little-Devs/template-therme-kanzian",
+      "submodulePath": "templates/therme-kanzian",
+      "techStack": {
+        "framework": "Astro",
+        "version": "5.17.1",
+        "styling": "CSS",
+        "scripting": "TypeScript",
+        "buildTool": "Vite"
+      },
+      "features": [
+        "Full-screen video background hero with autoplay",
+        "7 pages: Home, Location, Investment, Therme, Hotel, Apartment, Contact",
+        "Responsive zigzag content layouts",
+        "Transparent header with scroll state",
+        "Mobile-responsive hamburger menu",
+        "Contact form with custom styling",
+        "Scroll-triggered animations",
+        "Reduced motion support",
+        "SEO-optimized meta tags"
+      ],
+      "aesthetic": {
+        "style": "Minimal Wellness",
+        "description": "Clean, sophisticated design inspired by landscape-integrated architecture with focus on tranquility and nature",
+        "fonts": {
+          "primary": "Roboto"
+        },
+        "colors": {
+          "primary": "#000000",
+          "primaryName": "Black",
+          "accent": "#4FA8C7",
+          "accentName": "Wellness Blue",
+          "background": "#FFFFFF",
+          "backgroundName": "White"
+        }
+      },
+      "sections": [
+        "Transparent header with logo and navigation",
+        "Full-screen video hero with overlay text",
+        "Location and connectivity info",
+        "Investment opportunity details",
+        "Thermal spa features",
+        "Hotel accommodations",
+        "Apartment options",
+        "Contact form",
+        "Footer with location details"
+      ],
+      "useCases": [
+        "Wellness spas and thermal baths",
+        "Luxury hotels and resorts",
+        "Nature retreats",
+        "Real estate developments",
+        "Boutique destinations",
+        "Health and wellness centers"
+      ],
+      "customization": {
+        "difficulty": "easy",
+        "colorScheme": "CSS variables in variables.css",
+        "typography": "Google Fonts (Roboto)",
+        "layout": "CSS Grid + Flexbox"
+      },
+      "performance": {
+        "framework": "Astro (SSG)",
+        "cssOnly": "Most animations",
+        "lighthouse": "90+"
+      },
+      "license": "MIT",
+      "author": "Little-Devs",
+      "createdAt": "2026-01-31",
+      "lastUpdated": "2026-01-31",
+      "tags": [
+        "landing-page",
+        "wellness",
+        "spa",
+        "video-background",
+        "minimal",
+        "elegant",
+        "responsive",
+        "astro",
+        "multi-page"
       ]
     }
   ]

@@ -10,3 +10,6 @@
 [submodule "templates/devhub"]
 	path = templates/devhub
 	url = https://github.com/Little-Devs/template-devhub.git
+[submodule "templates/therme-kanzian"]
+	path = templates/therme-kanzian
+	url = https://github.com/Little-Devs/template-therme-kanzian.git
