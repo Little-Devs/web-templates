@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-30",
-  "totalTemplates": 2,
+  "lastUpdated": "2026-01-31",
+  "totalTemplates": 3,
   "categories": [
     "landing-page",
     "dashboard",
@@ -193,6 +193,88 @@
         "tutorial",
         "figma",
         "modern",
+        "responsive"
+      ]
+    },
+    {
+      "id": "flat-technology",
+      "name": "Flat Technology",
+      "description": "Modern architecture and design studio showcase with sophisticated GSAP animations, smooth scrolling, and responsive design",
+      "category": "portfolio",
+      "subcategory": "architecture",
+      "repository": "https://github.com/Little-Devs/template-flat-technology",
+      "submodulePath": "templates/flat-technology",
+      "techStack": {
+        "framework": "Nuxt",
+        "version": "3.21.0",
+        "styling": "Tailwind CSS",
+        "scripting": "Vue 3",
+        "stateManagement": "Pinia",
+        "buildTool": "Vite"
+      },
+      "features": [
+        "GSAP animations with ScrollTrigger",
+        "Lenis smooth scrolling",
+        "Text reveal and parallax effects",
+        "Dark/light mode support",
+        "PWA enabled",
+        "Markdown-based CMS with Nuxt Content",
+        "SEO optimized",
+        "Fully responsive design",
+        "GitOps deployment workflow"
+      ],
+      "aesthetic": {
+        "style": "Modern Minimalist",
+        "description": "Clean, sophisticated design with focus on typography and smooth animations",
+        "fonts": {
+          "sans": "System fonts with Tailwind CSS",
+          "mono": "Tailwind CSS defaults"
+        },
+        "colors": {
+          "primary": "Customizable via Tailwind",
+          "background": "Dark/light mode adaptive"
+        }
+      },
+      "demoUrl": "",
+      "previewImage": "",
+      "useCases": [
+        "Architecture studios",
+        "Design agencies",
+        "Creative portfolios",
+        "Professional showcases"
+      ],
+      "installation": {
+        "steps": [
+          "Clone the repository",
+          "Install dependencies with npm install",
+          "Run development server with npm run dev",
+          "Build for production with npm run build"
+        ],
+        "requirements": [
+          "Node.js 20+",
+          "npm or pnpm"
+        ]
+      },
+      "performance": {
+        "framework": "Nuxt 3 (SSR/SSG)",
+        "animations": "GSAP + Lenis",
+        "pwa": "Enabled",
+        "lighthouse": "90+"
+      },
+      "license": "MIT",
+      "author": "Little-Devs",
+      "createdAt": "2026-01-31",
+      "lastUpdated": "2026-01-31",
+      "tags": [
+        "nuxt",
+        "vue",
+        "gsap",
+        "tailwind",
+        "portfolio",
+        "architecture",
+        "design-agency",
+        "smooth-scroll",
+        "pwa",
         "responsive"
       ]
     }
