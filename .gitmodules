@@ -6,4 +6,4 @@
 	url = git@github.com:Little-Devs/template-glass-showcase.git
 [submodule "templates/flat-technology"]
 	path = templates/flat-technology
-	url = https://github.com/Little-Devs/template-flat-technology.git
+	url = git@github.com:Little-Devs/template-flat-technology.git
