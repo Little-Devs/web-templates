@@ -1,0 +1,43 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "web-templates-mcp",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-01-01",
+	"compatibility_flags": ["nodejs_compat"],
+
+	// Durable Object for MCP state
+	"migrations": [
+		{
+			"new_sqlite_classes": ["MyMCP"],
+			"tag": "v1"
+		},
+		{
+			"renamed_classes": [{ "from": "MyMCP", "to": "WebTemplatesMCP" }],
+			"tag": "v2"
+		}
+	],
+	"durable_objects": {
+		"bindings": [
+			{
+				"class_name": "WebTemplatesMCP",
+				"name": "WEB_TEMPLATES_MCP"
+			}
+		]
+	},
+
+	// Custom domain route (uncomment once DNS propagates)
+	// "routes": [
+	// 	{
+	// 		"pattern": "mcp.little.websites/*",
+	// 		"zone_name": "little.websites"
+	// 	}
+	// ],
+
+	// Deploy to workers.dev subdomain
+	"workers_dev": true,
+
+	// Enable observability for debugging
+	"observability": {
+		"enabled": true
+	}
+}
