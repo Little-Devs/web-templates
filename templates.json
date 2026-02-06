@@ -107,7 +107,7 @@
       "subcategory": "showcase",
       "repository": "https://github.com/Little-Devs/template-glass-showcase",
       "submodulePath": "templates/glass-showcase",
-      "demoUrl": "glass.jibbr.dev",
+      "demoUrl": "https://glass.jibbr.dev",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
@@ -208,6 +208,7 @@
       "subcategory": "architecture",
       "repository": "https://github.com/Little-Devs/template-flat-technology",
       "submodulePath": "templates/flat-technology",
+      "demoUrl": "https://flat-tech.jibbr.dev",
       "techStack": {
         "framework": "Nuxt",
         "version": "3.21.0",
@@ -385,7 +386,7 @@
       "subcategory": "wellness",
       "repository": "https://github.com/Little-Devs/template-therme-kanzian",
       "submodulePath": "templates/therme-kanzian",
-      "demoUrl": "",
+      "demoUrl": "https://therme.jibbr.dev",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
