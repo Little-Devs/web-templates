@@ -474,7 +474,7 @@
       "subcategory": "admin",
       "repository": "https://github.com/Little-Devs/template-stitch",
       "submodulePath": "templates/stitch",
-      "demoUrl": "",
+      "demoUrl": "https://stitch.jibbr.dev",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
