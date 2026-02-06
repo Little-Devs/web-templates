@@ -19,7 +19,7 @@
       "subcategory": "saas",
       "repository": "https://github.com/Little-Devs/template-flowforge",
       "submodulePath": "templates/flowforge",
-      "demoUrl": "https://flow-forge.jibbr.dev",
+      "demoUrl": "https://flowforge.jibbr.dev",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
@@ -107,7 +107,7 @@
       "subcategory": "showcase",
       "repository": "https://github.com/Little-Devs/template-glass-showcase",
       "submodulePath": "templates/glass-showcase",
-      "demoUrl": "",
+      "demoUrl": "glass.jibbr.dev",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
@@ -290,7 +290,7 @@
       "subcategory": "developer-tools",
       "repository": "https://github.com/Little-Devs/template-devhub",
       "submodulePath": "templates/devhub",
-      "demoUrl": "",
+      "demoUrl": "https://devhub.jibbr.dev" ,
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
