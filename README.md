@@ -12,6 +12,7 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Flat Technology](https://github.com/Little-Devs/template-flat-technology) | Portfolio | Nuxt, Vue 3, Tailwind | Modern architecture studio showcase with GSAP animations |
 | [FlowForge](https://github.com/Little-Devs/template-flowforge) | Landing Page | Astro, CSS, JS | Technical luxury automation platform landing page |
 | [Glass Showcase](https://github.com/Little-Devs/template-glass-showcase) | Landing Page | Astro, CSS, JS | Horizontal-scrolling glassmorphism showcase with 18 sections |
+| [Stitch](https://github.com/Little-Devs/template-stitch) | Dashboard | Astro, CSS, TS | Modern admin dashboard with dark theme, charts, and data tables |
 | [Therme Kanzian](https://github.com/Little-Devs/template-therme-kanzian) | Landing Page | Astro, CSS, TS | Wellness spa with video hero, 7 pages, minimal design |
 
 Browse the complete catalog in [`templates.json`](./templates.json).

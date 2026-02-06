@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-31",
-  "totalTemplates": 5,
+  "lastUpdated": "2026-02-02",
+  "totalTemplates": 6,
   "categories": [
     "landing-page",
     "dashboard",
@@ -19,6 +19,8 @@
       "subcategory": "saas",
       "repository": "https://github.com/Little-Devs/template-flowforge",
       "submodulePath": "templates/flowforge",
+      "demoUrl": "https://flow-forge.jibbr.dev",
+      "previewImage": "",
       "techStack": {
         "framework": "Astro",
         "version": "5.17.1",
@@ -105,6 +107,8 @@
       "subcategory": "showcase",
       "repository": "https://github.com/Little-Devs/template-glass-showcase",
       "submodulePath": "templates/glass-showcase",
+      "demoUrl": "",
+      "previewImage": "",
       "techStack": {
         "framework": "Astro",
         "version": "5.0.0",
@@ -286,6 +290,8 @@
       "subcategory": "developer-tools",
       "repository": "https://github.com/Little-Devs/template-devhub",
       "submodulePath": "templates/devhub",
+      "demoUrl": "",
+      "previewImage": "",
       "techStack": {
         "framework": "Astro",
         "version": "5.1.0",
@@ -379,6 +385,8 @@
       "subcategory": "wellness",
       "repository": "https://github.com/Little-Devs/template-therme-kanzian",
       "submodulePath": "templates/therme-kanzian",
+      "demoUrl": "",
+      "previewImage": "",
       "techStack": {
         "framework": "Astro",
         "version": "5.17.1",
@@ -456,6 +464,128 @@
         "responsive",
         "astro",
         "multi-page"
+      ]
+    },
+    {
+      "id": "stitch",
+      "name": "Stitch",
+      "description": "Modern admin dashboard template with sophisticated dark theme, animated charts, and comprehensive data management interfaces",
+      "category": "dashboard",
+      "subcategory": "admin",
+      "repository": "https://github.com/Little-Devs/template-stitch",
+      "submodulePath": "templates/stitch",
+      "demoUrl": "",
+      "previewImage": "",
+      "techStack": {
+        "framework": "Astro",
+        "version": "5.1.0",
+        "styling": "CSS",
+        "scripting": "TypeScript",
+        "buildTool": "Vite"
+      },
+      "features": [
+        "Dark theme with sophisticated color palette",
+        "Animated metric cards with trend indicators",
+        "Interactive line, bar, and donut charts",
+        "Real-time activity feed component",
+        "Comprehensive data tables with pagination",
+        "Advanced filtering and search functionality",
+        "Settings page with profile management",
+        "Notification preferences toggles",
+        "Theme and accent color customization",
+        "Responsive sidebar navigation",
+        "Glassmorphism header with backdrop blur",
+        "CSS-only animations and transitions",
+        "Staggered reveal animations",
+        "Mobile-responsive design"
+      ],
+      "aesthetic": {
+        "style": "Modern Dark Dashboard",
+        "description": "Sophisticated dark interface with gradient accents, subtle depth effects, and refined typography",
+        "fonts": {
+          "display": "Sora",
+          "sans": "DM Sans",
+          "mono": "JetBrains Mono"
+        },
+        "colors": {
+          "primary": "#0a0a0f",
+          "primaryName": "Deep Black",
+          "accent": "#6366f1",
+          "accentName": "Indigo",
+          "background": "#12121a",
+          "backgroundName": "Dark Surface"
+        }
+      },
+      "pages": [
+        {
+          "path": "/",
+          "name": "Dashboard",
+          "description": "Main dashboard with metrics, charts, and activity feed"
+        },
+        {
+          "path": "/analytics",
+          "name": "Analytics",
+          "description": "Detailed analytics with traffic data and top pages table"
+        },
+        {
+          "path": "/tables",
+          "name": "Tables",
+          "description": "Data tables with orders, filtering, and pagination"
+        },
+        {
+          "path": "/settings",
+          "name": "Settings",
+          "description": "User settings, notifications, and appearance preferences"
+        }
+      ],
+      "sections": [
+        "Collapsible sidebar navigation",
+        "Glassmorphism header with search",
+        "Metric cards grid",
+        "Revenue and sales charts",
+        "Activity feed sidebar",
+        "Quick actions panel",
+        "Data tables with actions",
+        "Settings forms",
+        "Theme customization"
+      ],
+      "useCases": [
+        "Admin dashboards",
+        "Analytics platforms",
+        "SaaS applications",
+        "E-commerce backends",
+        "Project management tools",
+        "CRM systems",
+        "Data visualization platforms",
+        "Internal tools and portals"
+      ],
+      "customization": {
+        "difficulty": "easy",
+        "colorScheme": "CSS variables in variables.css",
+        "typography": "Google Fonts (Sora, DM Sans, JetBrains Mono)",
+        "layout": "CSS Grid + Flexbox"
+      },
+      "performance": {
+        "framework": "Astro (SSG)",
+        "cssOnly": "All animations CSS-based",
+        "lighthouse": "95+"
+      },
+      "license": "MIT",
+      "author": "Little-Devs",
+      "createdAt": "2026-02-02",
+      "lastUpdated": "2026-02-02",
+      "tags": [
+        "dashboard",
+        "admin",
+        "dark-theme",
+        "charts",
+        "analytics",
+        "data-tables",
+        "settings",
+        "responsive",
+        "astro",
+        "typescript",
+        "css-animations"
       ]
     }
   ]

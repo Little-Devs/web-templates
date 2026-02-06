@@ -13,3 +13,6 @@
 [submodule "templates/therme-kanzian"]
 	path = templates/therme-kanzian
 	url = https://github.com/Little-Devs/template-therme-kanzian.git
+[submodule "templates/stitch"]
+	path = templates/stitch
+	url = https://github.com/Little-Devs/template-stitch.git
