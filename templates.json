@@ -208,7 +208,7 @@
       "subcategory": "architecture",
       "repository": "https://github.com/Little-Devs/template-flat-technology",
       "submodulePath": "templates/flat-technology",
-      "demoUrl": "https://lw-demo-flat.pages.dev/",
+      "demoUrl": "https://flat.little.website/",
       "techStack": {
         "framework": "Nuxt",
         "version": "3.21.0",
@@ -474,7 +474,7 @@
       "subcategory": "admin",
       "repository": "https://github.com/Little-Devs/template-stitch",
       "submodulePath": "templates/stitch",
-      "demoUrl": "https://lw-demo-stitch.pages.dev/",
+      "demoUrl": "https://stitch.little.website/",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
