@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-02-02",
+  "lastUpdated": "2026-09-01",
   "totalTemplates": 6,
   "categories": [
     "landing-page",
@@ -19,7 +19,7 @@
       "subcategory": "saas",
       "repository": "https://github.com/Little-Devs/template-flowforge",
       "submodulePath": "templates/flowforge",
-      "demoUrl": "https://flowforge.jibbr.dev",
+      "demoUrl": "https://flowforge.little.website/",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
@@ -107,7 +107,7 @@
       "subcategory": "showcase",
       "repository": "https://github.com/Little-Devs/template-glass-showcase",
       "submodulePath": "templates/glass-showcase",
-      "demoUrl": "https://glass.jibbr.dev",
+      "demoUrl": "https://glass.little.website/",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
@@ -291,7 +291,7 @@
       "subcategory": "developer-tools",
       "repository": "https://github.com/Little-Devs/template-devhub",
       "submodulePath": "templates/devhub",
-      "demoUrl": "https://devhub.jibbr.dev" ,
+      "demoUrl": "https://devhub.little.website/" ,
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
@@ -386,7 +386,7 @@
       "subcategory": "wellness",
       "repository": "https://github.com/Little-Devs/template-therme-kanzian",
       "submodulePath": "templates/therme-kanzian",
-      "demoUrl": "https://therme.jibbr.dev",
+      "demoUrl": "https://therme.little.website/",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
