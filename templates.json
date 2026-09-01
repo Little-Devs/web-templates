@@ -208,7 +208,7 @@
       "subcategory": "architecture",
       "repository": "https://github.com/Little-Devs/template-flat-technology",
       "submodulePath": "templates/flat-technology",
-      "demoUrl": "https://flat-tech.jibbr.dev",
+      "demoUrl": "https://lw-demo-flat.pages.dev/",
       "techStack": {
         "framework": "Nuxt",
         "version": "3.21.0",
@@ -240,7 +240,6 @@
           "background": "Dark/light mode adaptive"
         }
       },
-      "demoUrl": "",
       "previewImage": "",
       "useCases": [
         "Architecture studios",
@@ -475,7 +474,7 @@
       "subcategory": "admin",
       "repository": "https://github.com/Little-Devs/template-stitch",
       "submodulePath": "templates/stitch",
-      "demoUrl": "https://stitch.jibbr.dev",
+      "demoUrl": "https://lw-demo-stitch.pages.dev/",
       "previewImage": "",
       "techStack": {
         "framework": "Astro",
