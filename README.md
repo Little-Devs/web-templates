@@ -24,6 +24,8 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Mews House](https://github.com/Little-Devs/template-mews) | Landing Page | Astro, CSS, TS | Heritage townhouse and mews estate landing |
 | [North Harbor IT](https://github.com/Little-Devs/template-northharbor) | Landing Page | Astro, CSS, TS | Regional IT and MSP landing |
 | [Ochre Signal](https://github.com/Little-Devs/template-ochre) | Landing Page | Astro, CSS, TS | Australian-owned cyber and managed services landing |
+| [Vale Freight](https://github.com/Little-Devs/template-vale) | Landing Page | Astro, CSS, TS | Bass Strait and Tasman short-sea freight operator landing |
+| [Marrow](https://github.com/Little-Devs/template-marrow) | Landing Page | Astro, CSS, TS | Brunswick strength gym landing |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
