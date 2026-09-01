@@ -2,7 +2,7 @@
 
 A curated collection of production-ready website templates for AI agents and developers. Each template is a separate git repository, accessible as submodules for easy maintenance and versioning.
 
-## 📚 Template Collection
+## Template Collection
 
 ### Available Templates
 
@@ -14,17 +14,26 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Glass Showcase](https://github.com/Little-Devs/template-glass-showcase) | Landing Page | Astro, CSS, JS | Horizontal-scrolling glassmorphism showcase with 18 sections |
 | [Stitch](https://github.com/Little-Devs/template-stitch) | Dashboard | Astro, CSS, TS | Modern admin dashboard with dark theme, charts, and data tables |
 | [Therme Kanzian](https://github.com/Little-Devs/template-therme-kanzian) | Landing Page | Astro, CSS, TS | Wellness spa with video hero, 7 pages, minimal design |
+| [Atelier Folio](https://github.com/Little-Devs/template-atelier) | Portfolio | Astro, CSS, TS | Editorial photography studio portfolio, warm paper and oxide red |
+| [Harbor Clinic](https://github.com/Little-Devs/template-harbor) | Landing Page | Astro, CSS, TS | Coastal family clinic landing, seafoam and harbour slate |
+| [Cedar Table](https://github.com/Little-Devs/template-cedar) | Landing Page | Astro, CSS, TS | Pacific Northwest farm-to-table restaurant landing |
+| [Ridge Trades](https://github.com/Little-Devs/template-ridge) | Landing Page | Astro, CSS, TS | Mountain-state general contractor landing |
+| [Saltwind Inn](https://github.com/Little-Devs/template-saltwind) | Landing Page | Astro, CSS, TS | Coastal inn landing on a working harbour |
+| [Meterline](https://github.com/Little-Devs/template-meterline) | Landing Page | Astro, CSS, TS | B2B SaaS usage billing and analytics landing |
+| [Hale & Rowan](https://github.com/Little-Devs/template-hale) | Landing Page | Astro, CSS, TS | Architecture studio professional services landing |
+| [Mews House](https://github.com/Little-Devs/template-mews) | Landing Page | Astro, CSS, TS | Heritage townhouse and mews estate landing |
+| [North Harbor IT](https://github.com/Little-Devs/template-northharbor) | Landing Page | Astro, CSS, TS | Regional IT and MSP landing |
+| [Ochre Signal](https://github.com/Little-Devs/template-ochre) | Landing Page | Astro, CSS, TS | Australian-owned cyber and managed services landing |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
-## 🚀 Quick Start
+## Quick Start
 
 ### For Developers
 
 Clone the entire collection with all templates:
 
 ```bash
-# Clone with all submodules
 git clone --recursive https://github.com/Little-Devs/web-templates.git
 cd web-templates
 ```
@@ -32,17 +41,12 @@ cd web-templates
 Or clone the main repo and initialize submodules later:
 
 ```bash
-# Clone main repository
 git clone https://github.com/Little-Devs/web-templates.git
 cd web-templates
-
-# Initialize and update all submodules
 git submodule update --init --recursive
 ```
 
 ### Using a Specific Template
-
-Navigate to a template and start building:
 
 ```bash
 cd templates/flowforge
@@ -62,34 +66,28 @@ AI agents can discover and use templates through:
 Example agent workflow:
 
 ```javascript
-// Read the catalog
 const catalog = await fetch('https://raw.githubusercontent.com/Little-Devs/web-templates/main/templates.json')
   .then(r => r.json());
-
-// Find templates by category
 const landingPages = catalog.templates.filter(t => t.category === 'landing-page');
-
-// Clone a specific template
 const template = catalog.templates.find(t => t.id === 'flowforge');
-// Use template.repository to clone or template.submodulePath to access
 ```
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 web-templates/
-├── README.md              # This file
-├── templates.json         # Catalog of all templates with metadata
-├── CONTRIBUTING.md        # Guidelines for adding templates
-├── .gitmodules           # Git submodules configuration
-└── templates/            # Template submodules
-    ├── flat-technology/  # Git submodule → template-flat-technology
-    ├── flowforge/        # Git submodule → template-flowforge
-    ├── glass-showcase/   # Git submodule → template-glass-showcase
-    └── ...               # More templates as submodules
+├── README.md
+├── templates.json
+├── CONTRIBUTING.md
+├── .gitmodules
+└── templates/
+    ├── flowforge/
+    ├── glass-showcase/
+    ├── atelier/
+    └── ...
 ```
 
-## 🎯 Template Categories
+## Template Categories
 
 - **Landing Pages**: SaaS, product launches, marketing sites
 - **Portfolios**: Architecture studios, design agencies, creative showcases
@@ -98,122 +96,27 @@ web-templates/
 - **Blogs**: Article layouts, content platforms
 - **Documentation**: API docs, guides, knowledge bases
 
-## ✨ Template Features
+## Template Features
 
 All templates include:
 
-- ✅ Production-ready code
-- ✅ Responsive design
-- ✅ Modern tech stack
-- ✅ Comprehensive documentation
-- ✅ Customization guides
-- ✅ Template metadata (`template.json`)
-- ✅ MIT License
+- Production-ready code
+- Responsive design
+- Modern tech stack
+- Comprehensive documentation
+- Customization guides
+- Template metadata (`template.json`)
+- MIT License
 
-## 🔄 Keeping Templates Updated
-
-Update all templates to their latest versions:
-
-```bash
-# Update all submodules
-git submodule update --remote --merge
-
-# Commit the updates
-git add .
-git commit -m "Update templates to latest versions"
-git push
-```
-
-Update a specific template:
-
-```bash
-cd templates/flowforge
-git pull origin main
-cd ../..
-git add templates/flowforge
-git commit -m "Update FlowForge template"
-git push
-```
-
-## 🤝 Contributing
+## Contributing
 
 We welcome new templates! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-### Adding a New Template
+## License
 
-1. **Create your template repository** (e.g., `template-mytemplate`)
-   - Include comprehensive README
-   - Add `template.json` metadata file
-   - Ensure production-ready code
-   - Add MIT license
+All templates are released under the MIT License unless otherwise specified.
 
-2. **Add as submodule**:
-   ```bash
-   git submodule add https://github.com/Little-Devs/template-mytemplate.git templates/mytemplate
-   ```
-
-3. **Update the catalog**:
-   - Add entry to `templates.json`
-   - Include all required metadata fields
-
-4. **Submit pull request** with your changes
-
-## 🎨 Template Standards
-
-Templates must meet these standards:
-
-- **Code Quality**: Clean, documented, production-ready
-- **Responsive**: Mobile-first design approach
-- **Performance**: Optimized assets and code
-- **Accessibility**: WCAG AA compliance
-- **Documentation**: Comprehensive README and inline comments
-- **Metadata**: Complete `template.json` file
-- **License**: MIT or compatible
-
-## 📊 Template Metadata
-
-Each template includes a `template.json` file with:
-
-```json
-{
-  "id": "template-id",
-  "name": "Template Name",
-  "description": "Brief description",
-  "category": "landing-page",
-  "techStack": {...},
-  "features": [...],
-  "aesthetic": {...},
-  "useCases": [...],
-  "customization": {...}
-}
-```
-
-See any template's `template.json` for a complete example.
-
-## 🛠 Tech Stack
-
-Templates use modern, popular technologies:
-
-- **Frameworks**: Astro, Nuxt, Next.js, React, Vue, Svelte
-- **Styling**: Tailwind CSS, CSS Modules, Styled Components
-- **Animation**: GSAP, Lenis, Framer Motion, CSS animations
-- **Build Tools**: Vite, Webpack, Turbopack
-
-## 📝 License
-
-All templates are released under the MIT License unless otherwise specified. You're free to use them for personal or commercial projects.
-
-## 🆘 Support
-
-- **Issues**: Open an issue in the specific template's repository
-- **General Questions**: Open an issue in this main repository
-- **Contributions**: See [CONTRIBUTING.md](./CONTRIBUTING.md)
-
-## 🌟 Showcase
-
-Using one of our templates? We'd love to see it! Tag [@Little-Devs](https://github.com/Little-Devs) or open a PR to add your site to our showcase.
-
-## 🔗 Links
+## Links
 
 - [Little-Devs Organization](https://github.com/Little-Devs)
 - [Template Catalog](./templates.json)
@@ -221,6 +124,6 @@ Using one of our templates? We'd love to see it! Tag [@Little-Devs](https://gith
 
 ---
 
-**Built with ⚡ by Little-Devs**
+**Built by Little-Devs**
 
 *Empowering AI agents and developers with production-ready templates*
