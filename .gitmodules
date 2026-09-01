@@ -16,3 +16,33 @@
 [submodule "templates/stitch"]
 	path = templates/stitch
 	url = https://github.com/Little-Devs/template-stitch.git
+[submodule "templates/atelier"]
+	path = templates/atelier
+	url = https://github.com/Little-Devs/template-atelier.git
+[submodule "templates/harbor"]
+	path = templates/harbor
+	url = https://github.com/Little-Devs/template-harbor.git
+[submodule "templates/cedar"]
+	path = templates/cedar
+	url = https://github.com/Little-Devs/template-cedar.git
+[submodule "templates/ridge"]
+	path = templates/ridge
+	url = https://github.com/Little-Devs/template-ridge.git
+[submodule "templates/saltwind"]
+	path = templates/saltwind
+	url = https://github.com/Little-Devs/template-saltwind.git
+[submodule "templates/meterline"]
+	path = templates/meterline
+	url = https://github.com/Little-Devs/template-meterline.git
+[submodule "templates/hale"]
+	path = templates/hale
+	url = https://github.com/Little-Devs/template-hale.git
+[submodule "templates/mews"]
+	path = templates/mews
+	url = https://github.com/Little-Devs/template-mews.git
+[submodule "templates/northharbor"]
+	path = templates/northharbor
+	url = https://github.com/Little-Devs/template-northharbor.git
+[submodule "templates/ochre"]
+	path = templates/ochre
+	url = https://github.com/Little-Devs/template-ochre.git
