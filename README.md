@@ -28,6 +28,8 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Marrow](https://github.com/Little-Devs/template-marrow) | Landing Page | Astro, CSS, TS | Brunswick strength gym landing, bone iron oxblood |
 | [Bramble Court](https://github.com/Little-Devs/template-bramble) | Landing Page | Astro, CSS, TS | Melbourne family-law chambers landing |
 | [Drip Theory](https://github.com/Little-Devs/template-drip) | Landing Page | Astro, CSS, TS | Fitzroy coffee roastery and cupping room landing |
+| [Paperheart](https://github.com/Little-Devs/template-paperheart) | Landing Page | Astro, CSS, TS | Carlton independent bookshop landing |
+| [Holdfast Marine](https://github.com/Little-Devs/template-holdfast) | Landing Page | Astro, CSS, TS | Queenscliff wooden-boat yard landing |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
