@@ -26,6 +26,8 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Ochre Signal](https://github.com/Little-Devs/template-ochre) | Landing Page | Astro, CSS, TS | Australian-owned cyber and managed services landing |
 | [Vale Freight](https://github.com/Little-Devs/template-vale) | Landing Page | Astro, CSS, TS | Bass Strait and Tasman short-sea freight operator landing |
 | [Marrow](https://github.com/Little-Devs/template-marrow) | Landing Page | Astro, CSS, TS | Brunswick strength gym landing, bone iron oxblood |
+| [Bramble Court](https://github.com/Little-Devs/template-bramble) | Landing Page | Astro, CSS, TS | Melbourne family-law chambers landing |
+| [Drip Theory](https://github.com/Little-Devs/template-drip) | Landing Page | Astro, CSS, TS | Fitzroy coffee roastery and cupping room landing |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 

@@ -52,3 +52,9 @@
 [submodule "templates/marrow"]
 	path = templates/marrow
 	url = https://github.com/Little-Devs/template-marrow.git
+[submodule "templates/bramble"]
+	path = templates/bramble
+	url = https://github.com/Little-Devs/template-bramble.git
+[submodule "templates/drip"]
+	path = templates/drip
+	url = https://github.com/Little-Devs/template-drip.git
