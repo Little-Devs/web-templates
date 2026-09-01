@@ -230,7 +230,9 @@ export default {
 		const url = new URL(request.url);
 
 	if (url.pathname === "/mcp") {
-		return WebTemplatesMCP.serve("/mcp").fetch(request, env, ctx);
+		return WebTemplatesMCP.serve("/mcp", {
+			binding: "WEB_TEMPLATES_MCP",
+		}).fetch(request, env, ctx);
 	}
 
 		// Root path - return simple info page
