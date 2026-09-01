@@ -46,3 +46,9 @@
 [submodule "templates/ochre"]
 	path = templates/ochre
 	url = https://github.com/Little-Devs/template-ochre.git
+[submodule "templates/vale"]
+	path = templates/vale
+	url = https://github.com/Little-Devs/template-vale.git
+[submodule "templates/marrow"]
+	path = templates/marrow
+	url = https://github.com/Little-Devs/template-marrow.git
