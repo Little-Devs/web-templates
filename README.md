@@ -78,15 +78,15 @@ const template = catalog.templates.find(t => t.id === 'flowforge');
 
 ```
 web-templates/
-── README.md
-── templates.json
-── CONTRIBUTING.md
-── .gitmodules
-└─ templates/
-    ── flowforge/
-    ── glass-showcase/
-    ── atelier/
-    └─ ...
+├── README.md
+├── templates.json
+├── CONTRIBUTING.md
+├── .gitmodules
+└── templates/
+    ├── flowforge/
+    ├── glass-showcase/
+    ├── atelier/
+    └── ...
 ```
 
 ## Template Categories
