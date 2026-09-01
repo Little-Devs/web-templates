@@ -58,3 +58,9 @@
 [submodule "templates/drip"]
 	path = templates/drip
 	url = https://github.com/Little-Devs/template-drip.git
+[submodule "templates/paperheart"]
+	path = templates/paperheart
+	url = https://github.com/Little-Devs/template-paperheart.git
+[submodule "templates/holdfast"]
+	path = templates/holdfast
+	url = https://github.com/Little-Devs/template-holdfast.git
