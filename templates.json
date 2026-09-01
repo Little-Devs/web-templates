@@ -10,7 +10,5 @@
     "blog",
     "documentation"
   ],
-  "templates": [
-    PLACEHOLDER_SEE_FILE
-  ]
+  "templates": []
 }
