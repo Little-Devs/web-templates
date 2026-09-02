@@ -64,3 +64,12 @@
 [submodule "templates/holdfast"]
 	path = templates/holdfast
 	url = https://github.com/Little-Devs/template-holdfast.git
+[submodule "templates/fuse"]
+	path = templates/fuse
+	url = https://github.com/Little-Devs/template-fuse.git
+[submodule "templates/stackwell"]
+	path = templates/stackwell
+	url = https://github.com/Little-Devs/template-stackwell.git
+[submodule "templates/oddment"]
+	path = templates/oddment
+	url = https://github.com/Little-Devs/template-oddment.git
