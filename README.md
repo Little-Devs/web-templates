@@ -30,6 +30,9 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Drip Theory](https://github.com/Little-Devs/template-drip) | Landing Page | Astro, CSS, TS | Fitzroy coffee roastery and cupping room landing |
 | [Paperheart](https://github.com/Little-Devs/template-paperheart) | Landing Page | Astro, CSS, TS | Carlton independent bookshop landing |
 | [Holdfast Marine](https://github.com/Little-Devs/template-holdfast) | Landing Page | Astro, CSS, TS | Queenscliff wooden-boat yard landing |
+| [Fuse Lane](https://github.com/Little-Devs/template-fuse) | Landing Page | Astro, CSS, TS | Melbourne inner-north licensed electrician landing |
+| [Stackwell](https://github.com/Little-Devs/template-stackwell) | Landing Page | Astro, CSS, TS | Melbourne inner north and west plumber landing |
+| [Oddment](https://github.com/Little-Devs/template-oddment) | Landing Page | Astro, CSS, TS | Melbourne inner-north handyman workshop landing |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
