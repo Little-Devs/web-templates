@@ -36,6 +36,9 @@ A curated collection of production-ready website templates for AI agents and dev
 | [After Dark Electrical](https://github.com/Little-Devs/template-afterdark) | Landing Page | Astro, CSS, TS | 24/7 emergency callout electrician splash |
 | [Kerbstone](https://github.com/Little-Devs/template-kerbstone) | Landing Page | Astro, CSS, TS | Home EV wall-charger splash |
 | [Riser Room](https://github.com/Little-Devs/template-riser) | Landing Page | Astro, CSS, TS | Apartment/strata riser-upgrade splash |
+| [Gablewatt](https://github.com/Little-Devs/template-gablewatt) | Landing Page | Vite, React, Tailwind, shadcn | Suburban rooftop solar rebate funnel splash |
+| [Nightcell](https://github.com/Little-Devs/template-nightcell) | Landing Page | TanStack Start, CSS, TS | Home battery backup funnel splash |
+| [Spanwatt](https://github.com/Little-Devs/template-spanwatt) | Landing Page | Vite, Vue 3, TS | Farm/commercial tin-roof solar funnel splash |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
