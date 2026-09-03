@@ -33,6 +33,9 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Fuse Lane](https://github.com/Little-Devs/template-fuse) | Landing Page | Astro, CSS, TS | Melbourne inner-north licensed electrician landing |
 | [Stackwell](https://github.com/Little-Devs/template-stackwell) | Landing Page | Astro, CSS, TS | Melbourne inner north and west plumber landing |
 | [Oddment](https://github.com/Little-Devs/template-oddment) | Landing Page | Astro, CSS, TS | Melbourne inner-north handyman workshop landing |
+| [After Dark Electrical](https://github.com/Little-Devs/template-afterdark) | Landing Page | Astro, CSS, TS | 24/7 emergency callout electrician splash |
+| [Kerbstone](https://github.com/Little-Devs/template-kerbstone) | Landing Page | Astro, CSS, TS | Home EV wall-charger splash |
+| [Riser Room](https://github.com/Little-Devs/template-riser) | Landing Page | Astro, CSS, TS | Apartment/strata riser-upgrade splash |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
