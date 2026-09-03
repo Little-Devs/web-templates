@@ -39,6 +39,7 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Gablewatt](https://github.com/Little-Devs/template-gablewatt) | Landing Page | Vite, React, Tailwind, shadcn | Suburban rooftop solar rebate funnel splash |
 | [Nightcell](https://github.com/Little-Devs/template-nightcell) | Landing Page | TanStack Start, CSS, TS | Home battery backup funnel splash |
 | [Spanwatt](https://github.com/Little-Devs/template-spanwatt) | Landing Page | Vite, Vue 3, TS | Farm/commercial tin-roof solar funnel splash |
+| [Strop](https://github.com/Little-Devs/template-strop) | Landing Page | Vite, React, Tailwind | Fitzroy men's barber sales-funnel splash |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
