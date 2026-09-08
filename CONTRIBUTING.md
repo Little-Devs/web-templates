@@ -39,7 +39,9 @@ All templates must meet these standards before being accepted:
 - ✅ Customization guide
 - ✅ Project structure explanation
 - ✅ Usage examples
-- ✅ Template metadata file
+- ✅ Template metadata file (`template.json`)
+- ✅ Root `AGENTS.md` (agent/LLM setup — copy from [`skeletons/AGENTS.md`](./skeletons/AGENTS.md))
+- ✅ Root `PROMPT.md` (reproduction prompt — copy from [`skeletons/PROMPT.md`](./skeletons/PROMPT.md))
 
 ## 📝 Adding a New Template
 
@@ -56,11 +58,15 @@ All templates must meet these standards before being accepted:
    - Follow best practices
    - Test thoroughly across devices and browsers
 
-3. **Add required files**:
+3. **Add required files** (all at the template repo root):
    - `README.md` - Comprehensive documentation
    - `template.json` - Template metadata (see format below)
    - `LICENSE` - MIT license
    - `.gitignore` - Appropriate ignore rules
+   - `AGENTS.md` - Agent/LLM setup, security, tokens, and contacts (**mandatory** — start from [`skeletons/AGENTS.md`](./skeletons/AGENTS.md))
+   - `PROMPT.md` - Provider-agnostic reproduction prompt (**mandatory** — start from [`skeletons/PROMPT.md`](./skeletons/PROMPT.md))
+
+   `AGENTS.md` and `PROMPT.md` are required alongside README, `template.json`, and LICENSE. Copy the skeletons into the template root (not a `docs/` folder), then replace bracketed placeholders. `web-templates-mcp` (`get_agent_docs`) fetches `{repository}/main/AGENTS.md` and `PROMPT.md`.
 
 ### Step 2: Create Template Metadata
 
@@ -162,6 +168,8 @@ Before submitting, verify your template has:
 - [ ] Unique, descriptive name
 - [ ] Complete `template.json` metadata
 - [ ] Comprehensive README.md
+- [ ] Root `AGENTS.md` (copied from [`skeletons/`](./skeletons/) and filled in)
+- [ ] Root `PROMPT.md` (copied from [`skeletons/`](./skeletons/) and filled in)
 - [ ] MIT License file
 - [ ] Responsive design tested on multiple devices
 - [ ] Cross-browser compatibility verified
