@@ -12,6 +12,8 @@ A remote MCP (Model Context Protocol) server for discovering and accessing produ
 | `get_template` | Get complete metadata for a specific template by ID |
 | `search_templates` | Search templates by keyword across names, descriptions, features, and tags |
 | `list_categories` | List available categories with template counts |
+| `get_agent_skeletons` | Canonical `AGENTS.md` + `PROMPT.md` skeletons (`skeletons/` on main, or embedded fallback) |
+| `get_agent_docs` | `AGENTS.md` + `PROMPT.md` for a catalog template `id`; skeletons + note if the template repo is missing them |
 
 ## Connect from Claude Desktop / Cursor
 
@@ -52,6 +54,16 @@ get_template(id: "flowforge")
 **Search for dark-themed templates:**
 ```
 search_templates(query: "dark theme")
+```
+
+**Get agent docs for a catalog template (falls back to skeletons if the repo is missing them):**
+```
+get_agent_docs(id: "flowforge")
+```
+
+**Get the canonical AGENTS.md + PROMPT.md skeletons:**
+```
+get_agent_skeletons()
 ```
 
 ## Local Development

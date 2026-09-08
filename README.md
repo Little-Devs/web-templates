@@ -79,6 +79,7 @@ AI agents can discover and use templates through:
 
 1. **GitHub MCP**: Access repositories directly via the GitHub MCP integration
 2. **Catalog API**: Read `templates.json` for structured metadata about all templates
+3. **web-templates-mcp** (`https://mcp.little.website`): `get_agent_docs` / `get_agent_skeletons` for per-template `AGENTS.md` + `PROMPT.md`
 
 Example agent workflow:
 
@@ -96,6 +97,7 @@ web-templates/
 ├── README.md
 ├── templates.json
 ├── CONTRIBUTING.md
+├── skeletons/           # Copy AGENTS.md + PROMPT.md into each template-* root
 ├── .gitmodules
 └── templates/
     ├── flowforge/
@@ -123,6 +125,7 @@ All templates include:
 - Comprehensive documentation
 - Customization guides
 - Template metadata (`template.json`)
+- Root `AGENTS.md` and `PROMPT.md` (see [`skeletons/`](./skeletons/))
 - MIT License
 
 ## Contributing
