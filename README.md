@@ -41,6 +41,7 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Spanwatt](https://github.com/Little-Devs/template-spanwatt) | Landing Page | Vite, Vue 3, TS | Farm/commercial tin-roof solar funnel splash |
 | [Strop](https://github.com/Little-Devs/template-strop) | Landing Page | Vite, React, Tailwind | Fitzroy men's barber sales-funnel splash |
 | [Rivet](https://github.com/Little-Devs/template-rivet) | Landing Page | HTML, CSS, JS | Automations agency — CRM, billing, support wiring |
+| [AI Consultants](https://github.com/Little-Devs/template-ai-consultants) | Landing Page | HTML, Tailwind, JS | Static multi-page AI consultancy template; rebrand via tokens + brand.js |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 
