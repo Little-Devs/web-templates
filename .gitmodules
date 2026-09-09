@@ -73,3 +73,6 @@
 [submodule "templates/oddment"]
 	path = templates/oddment
 	url = https://github.com/Little-Devs/template-oddment.git
+[submodule "templates/ai-consultants"]
+	path = templates/ai-consultants
+	url = https://github.com/Little-Devs/template-ai-consultants.git
