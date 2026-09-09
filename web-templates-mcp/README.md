@@ -83,6 +83,8 @@ npm run dev
 npm run deploy
 ```
 
+Cloudflare Workers Builds root is `/web-templates-mcp/`; deploy with `npx wrangler deploy` and an empty build command.
+
 ## Template Catalog
 
 The MCP server fetches the template catalog from:

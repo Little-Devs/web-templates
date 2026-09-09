@@ -1,12 +1,12 @@
 [submodule "templates/flowforge"]
 	path = templates/flowforge
-	url = git@github.com:Little-Devs/template-flowforge.git
+	url = https://github.com/Little-Devs/template-flowforge.git
 [submodule "templates/glass-showcase"]
 	path = templates/glass-showcase
-	url = git@github.com:Little-Devs/template-glass-showcase.git
+	url = https://github.com/Little-Devs/template-glass-showcase.git
 [submodule "templates/flat-technology"]
 	path = templates/flat-technology
-	url = git@github.com:Little-Devs/template-flat-technology.git
+	url = https://github.com/Little-Devs/template-flat-technology.git
 [submodule "templates/devhub"]
 	path = templates/devhub
 	url = https://github.com/Little-Devs/template-devhub.git
