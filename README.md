@@ -42,6 +42,7 @@ A curated collection of production-ready website templates for AI agents and dev
 | [Strop](https://github.com/Little-Devs/template-strop) | Landing Page | Vite, React, Tailwind | Fitzroy men's barber sales-funnel splash |
 | [Rivet](https://github.com/Little-Devs/template-rivet) | Landing Page | HTML, CSS, JS | Automations agency — CRM, billing, support wiring |
 | [AI Consultants](https://github.com/Little-Devs/template-ai-consultants) | Landing Page | HTML, Tailwind, JS | Static multi-page AI consultancy template; rebrand via tokens + brand.js |
+| [Select26](https://github.com/Little-Devs/template-select26) | Landing Page | Astro, CSS | Cream-paper Select26-style conference landing with speakers, agenda, tickets |
 
 Browse the complete catalog in [`templates.json`](./templates.json).
 

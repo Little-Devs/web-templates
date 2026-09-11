@@ -76,3 +76,6 @@
 [submodule "templates/ai-consultants"]
 	path = templates/ai-consultants
 	url = https://github.com/Little-Devs/template-ai-consultants.git
+[submodule "templates/select26"]
+	path = templates/select26
+	url = https://github.com/Little-Devs/template-select26.git
